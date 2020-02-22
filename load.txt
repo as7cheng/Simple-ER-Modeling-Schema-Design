@@ -1,0 +1,16 @@
+.separator |
+
+.import Category.dat CATEGORY
+.import Country.dat COUNTRY
+.import Location.dat LOCATION
+update Location set country_id = null where country_id = 'NULL';
+.import Bid.dat BID
+.import Item.dat ITEM
+update Item set currently = null where currently = 'NULL';
+update Item set buy_price = null where buy_price = 'NULL';
+update Item set first_bid = null where first_bid = 'NULL';
+.import ItemBid.dat ITEMBID
+.import ItemCategory.dat ITEMCATEGORY
+.import ItemSeller.dat ITEMSELLER
+.import User.dat USER
+update User set location_id = null where location_id = 'NULL';
